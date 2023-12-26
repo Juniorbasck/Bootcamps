@@ -1,1 +1,1 @@
-# Trilha JS Developer - Pokedex
+# Construção de uma pokedex
