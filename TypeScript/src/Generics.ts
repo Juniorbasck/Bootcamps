@@ -8,3 +8,5 @@ function concatArray<T>(...itens: T[]): T[] {
   
   console.log(numArray);
   console.log(stgArray);
+
+  /*generics serve para você passar o tipo depois, inserindo o T como tipo no momento, mas qunado for chamdo foi passaro o tipo desejado*/
