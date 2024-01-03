@@ -11,9 +11,9 @@ function addNumber(x: number, y: number): number {
     return phone;
   }
   
-  async function getDatabase(id: number): Promise<string> {
-    return "felipe";
-  }
+//   async function getDatabase(id: number): Promise<string> {
+//     return "felipe";
+//   }
   
   let soma: number = addNumber(4, 7);
   
