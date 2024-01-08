@@ -4,7 +4,8 @@ import { Component,
   AfterContentChecked, 
   AfterContentInit, 
   AfterViewChecked, 
-  AfterViewInit } from '@angular/core';
+  AfterViewInit,
+  OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-check-sample',
@@ -17,7 +18,8 @@ export class CheckSampleComponent implements
  AfterContentChecked, 
  AfterContentInit, 
  AfterViewChecked, 
- AfterViewInit  {
+ AfterViewInit,
+ OnDestroy {
 
   quantidade:number = 0;
 
@@ -26,32 +28,37 @@ export class CheckSampleComponent implements
   Adicionar(){
     this.quantidade += 1; 
   }
-
+  
   Decrementar(){
     this.quantidade -= 1;
   }
-
+  
+  
   ngAfterViewInit(): void {
     console.log("ngAftterViewInit");
   }
   ngAfterViewChecked(): void {
     console.log("ngAfterViewChecked");
   }
-
+  
   ngAfterContentInit(): void {  
     console.log("ngAfterContentInit");
   }
-
+  
   ngAfterContentChecked(): void {
     console.log("ngAfterCotenntChecked")
   }
-
+  
   ngDoCheck(): void {
     console.log("ngDocheck")
   }
-
+  
   ngOnInit(): void {
     console.log("ngOnit ")
   }
-
+  
+  ngOnDestroy(): void {
+    console.log("ngOnDestroy");
+  }
+  
 }
